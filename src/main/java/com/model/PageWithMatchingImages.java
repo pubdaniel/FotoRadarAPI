@@ -41,7 +41,6 @@ public class PageWithMatchingImages implements Serializable{
 	
 	@ManyToOne
 	@Cascade(org.hibernate.annotations.CascadeType.ALL)
-	@JoinColumn(name = "image_id")
 	private Image image;
 	
 	public PageWithMatchingImages() {

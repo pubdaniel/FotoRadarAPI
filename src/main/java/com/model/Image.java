@@ -36,7 +36,7 @@ public class Image implements Serializable{
 	private Long id;
 	private String url;
 	
-	@OneToMany(mappedBy = "pagematched")
+	@OneToMany
 	@Cascade(CascadeType.ALL)
 	private List<PageWithMatchingImages> pagesWithMatchingImages;
 		
