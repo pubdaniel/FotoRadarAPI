@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fotoradar-216820",
+  "private_key_id": "d00476af1a36f59875f069b887e022a9c8c64748",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZr6YvgfTjmwsD\nsJ8/Pb/L8anonkY4d9/KEn+0Lt807lUl1tZsj1sD9ae+veh1Is4RBVe6Ha2Gm+bO\nbC/9L77mDYfgNcKd9iWG+L54CUrxhPqQ8G6z5B7+rI+88Zywvax06sVdDyXHiEsS\n+L18sK8aLjKtp3KdEw7KWohAFa+V6k7V/dfl65YeqZYHKk8bRJzNxS94yCM67GVn\nMJkdC9wxm2lSgO4oF4u8RvxNJRc25/hQi+HHvEZTDRrmV7AMLMZOVHojlCayEuP3\nzmQL8ThH0OWJ3xJWr4QiWvoAtXXpneoh6985ZLeSaKr6+vAPSnK8kR0kjPdOL5Pu\nuofngJ1jAgMBAAECggEAFe7cb8FDOsxguQkW4Qal/awijIEyElMBTCxxrzxVPI+a\n9UiA14NqANmpM+6UY0sxT3qMt5IOtrw/J0yHWMHco6Zgst3ZRYPgfS+4txbUbD2H\nKPI3SlMPHVdxOAzfSNX468KpogtMX/qShEWdfVMV2k2ni+Lu133lyXk8IrE1mtZZ\n+ZEAtH042Y6yjTGk0vx8GN80j5CvnlTAwGaoQ8mQ1B3qGcFGOUpqXtV09Ug18AQL\nNr4jeQjqn12y5iFTG8OVWDiADr9tCv5S0hzcY5hZk/EppLal52RZgm+Idvf7iNA9\nYT24GfmYhL5CP08moOs1QZRFTAW/d79orFU+eB3/8QKBgQDO1J1GN2fJuM+XqtqA\nc+mvSVWEHRcciFeP2QePIVlKf8Vh3LfTEQ264Y+H8CGBUvAkuWYMdd3pTiysQvup\nn+jwYuqTS86Ce+vAcmAQN/BhZd7n0YEYMvWo3N/NR0YI4mRyowaVPLLBnnHJKVUW\nmpLtwF1FWbq9BVq3VsOuMgdw2wKBgQC+OL/I9Rs7eZktI/Mg/tn7MWl4wXMispI7\nUOugutxK+hotPbE9Lb0av7vP7Rb8R2EyvMztPLpFQN1qBGIYSy6XxAD7QTgHuHuq\nSJgb7J3qjeV3cSPaD0zlS4dph1yUuLseD9JkyqRfDEadITtE1H37JrHxrVdtrGkC\nQ1XxPOtIGQKBgQCcgyW0cc7XRkPJGKAaHhzS6SKOQ9kuXTotf2UJ+YlxJ7j8siJk\n1P3X0kJj8uHX1CQnFijT+wl/OAn0HQgFtx11ctThu7a85PtkeOiavUno2kbQk6gl\n4MInE2VEGNA1fuPWH+mmWvVGMRkXyXA7F6NhyHSMOzdlPD0GieCv2+nniwKBgF6r\nzb+NRX1nOnX9414zmHdtEyoXVV8acq70yiCXf1YNfYOwpYpmPiyW6jlErWDngZeH\n4ZHc3HPlIY1HGy8uE8VSto5V2jX1eg64zINxUvLOpjq443f+j227FmzOAqS9/9qp\nUzP4qq/nYymGxYGvI/ggPQWkGNQrr6OBsb87a3nZAoGAUZrmUP67EnMKX0F2UuQH\nLHjc08ILBX5qJbX8dgsjcIHzskipgu9JduVDaVJ/Fft9nFhm2cWMrVzUvt5esaad\nMyQDL+cJDD7PJA/U9GGon5iKZM0EQdb+tW0aFzg9Jse8QInld5ny6Td9Gk/4NCkj\n17QbZCWgJ+0WtZ37qzjFJpw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "danielgoqueiroz@fotoradar-216820.iam.gserviceaccount.com",
+  "client_id": "105166808242665049889",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/danielgoqueiroz%40fotoradar-216820.iam.gserviceaccount.com"
+}
