@@ -1,10 +1,11 @@
-package main.java.com.server;
+package main.java.com.service;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -33,6 +34,18 @@ public class ImageSearchService {
 
 	Gson gson = new Gson();
 	
+	
+	@GET
+	@Path("/images/find")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getImages(@QueryParam("url") String url) {
+		
+		ImageDAO imageDao = new ImageDAO();
+		Image image = imageDao.buscarImagePorUrl(url);
+		
+		return Response.accepted(image).build();
+	}
+	
 	@GET
 	@Path("/images")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -59,7 +72,8 @@ public class ImageSearchService {
 	
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response searchFormImages(@QueryParam("url") String url) {
+	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	public Response searchFormImages(@FormParam("url") String url) {
 		
 		try {
 			return Response.ok(ImageSearchControl.searchPagesWithMatchingImages(url)).build();

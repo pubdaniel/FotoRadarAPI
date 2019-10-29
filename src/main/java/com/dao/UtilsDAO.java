@@ -9,7 +9,7 @@ public class UtilsDAO {
     private static final EntityManagerFactory factory;
 
     static {
-        factory = Persistence.createEntityManagerFactory("FotoRafar-PU");
+        factory = Persistence.createEntityManagerFactory("FotoRadar-PU");
     }
 
     public static EntityManager getEntityManager() {

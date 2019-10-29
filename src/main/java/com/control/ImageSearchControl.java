@@ -13,6 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import main.java.com.dao.ImageDAO;
 import main.java.com.dao.PageWithMatchingImagesDAO;
 import main.java.com.model.Image;
 import main.java.com.model.PageWithMatchingImages;
@@ -31,12 +32,12 @@ public class ImageSearchControl {
 
     public static List<PageWithMatchingImages> searchPagesWithMatchingImages(String url)
             throws ClientProtocolException, IOException, ParseException {
-        Image image = new Image(url);
-
-        // find by url (dao) -> Imagem
-        // if (imagem != null) _ seta na pagina
-
-        Gson gson = new Gson();
+        
+    	ImageDAO dao = new ImageDAO();
+    	Image i = new Image(url);
+    	Image image = dao.salvar(i);
+    	
+    	Gson gson = new Gson();
 
         String json = GoogleClientAPI.detectWebDetections(url);
 

@@ -7,9 +7,9 @@
 	<persistence-unit name="FotoRadar-PU">
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3307/fotoradar?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC" />
+				value="jdbc:mysql://localhost:3306/fotoradar?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC" />
 			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password" value="root" />
+			<property name="javax.persistence.jdbc.password" value="" />
 
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.cj.jdbc.Driver" />
@@ -26,7 +26,7 @@
 			<property name="hibernate.format_sql" value="true" />
 		</properties>
 		
-		
+		   
 		
 		
 	</persistence-unit>

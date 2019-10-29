@@ -44,12 +44,12 @@ public class GoogleClientAPI {
         return jsonResponse;
     }
 
-    public static void main(String[] args) throws IOException, Exception {
-        String jsonResponse = GoogleClientAPI
-                .detectWebDetections("https://static.ndonline.com.br/2018/03/cropped/9c795a7a7e23d3e97f683791b09469a5e602cbd0.jpg");
-        FileOutputStream out = new FileOutputStream(new File("teste.json"));
-        out.write(jsonResponse.getBytes());
-        System.out.println("end");
-    }
+//    public static void main(String[] args) throws IOException, Exception {
+//        String jsonResponse = GoogleClientAPI
+//                .detectWebDetections("https://static.ndonline.com.br/2018/03/cropped/9c795a7a7e23d3e97f683791b09469a5e602cbd0.jpg");
+//        FileOutputStream out = new FileOutputStream(new File("teste.json"));
+//        out.write(jsonResponse.getBytes());
+//        System.out.println("end");
+//    }
 
 }

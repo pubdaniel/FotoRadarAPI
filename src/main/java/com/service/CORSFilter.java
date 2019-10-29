@@ -1,4 +1,4 @@
-package main.java.com.server;
+package main.java.com.service;
 import java.io.IOException;
 
 import javax.servlet.Filter;

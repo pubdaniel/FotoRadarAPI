@@ -29,7 +29,7 @@ public class PageWithMatchingImages implements Serializable {
     private String url;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date date;// adicionar
+    private Date date;
 
     @OneToOne
     private Image image;
