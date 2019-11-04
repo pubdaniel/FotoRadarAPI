@@ -17,12 +17,14 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.tomcat.util.json.JSONParser;
 import org.json.simple.JSONObject;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import junit.framework.Assert;
 
 public class ImageSearchServiceTest {
 
+	@Ignore
 	@Test
 	public void deveInformarImagemPorUrl() throws ClientProtocolException, IOException {
 		CloseableHttpClient client = HttpClients.createDefault();
@@ -39,7 +41,7 @@ public class ImageSearchServiceTest {
 
 		client.close();
 	}
-
+	@Ignore
 	@Test
 	public void deveInformarListaDeImagens() throws ClientProtocolException, IOException {
 
@@ -57,7 +59,7 @@ public class ImageSearchServiceTest {
 		client.close();
 
 	}
-
+	@Ignore
 	@Test
 	public void deveInformarPaginasParaUmaImagem() throws ClientProtocolException, IOException {
 		CloseableHttpClient client = HttpClients.createDefault();
@@ -73,7 +75,7 @@ public class ImageSearchServiceTest {
 
 		client.close();
 	}
-
+	@Ignore
 	@Test
 	public void deveRealizarBuscaDeNovaImagem() throws ClientProtocolException, IOException {
 		CloseableHttpClient client = HttpClients.createDefault();
