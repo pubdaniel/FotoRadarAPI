@@ -13,7 +13,7 @@ public class MatchingImage {
 	public MatchingImage(MatchingImageDTO iDTO) {
 		this.url = iDTO.getUrl();
 	}
-	public Long getId() {
+	public Long getId() { 
 		return id;
 	}
 	public void setId(Long id) {
