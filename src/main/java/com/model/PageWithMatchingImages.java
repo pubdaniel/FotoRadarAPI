@@ -3,6 +3,7 @@ package main.java.com.model;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,6 +27,7 @@ public class PageWithMatchingImages implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String pageTitle;
+    @Column(columnDefinition="TEXT")
     private String url;
 
     @Temporal(TemporalType.TIMESTAMP)

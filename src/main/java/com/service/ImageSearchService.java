@@ -71,8 +71,8 @@ public class ImageSearchService {
 	}
 	
 	@POST
-	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response searchFormImages(@FormParam("url") String url) {
 		
 		try {

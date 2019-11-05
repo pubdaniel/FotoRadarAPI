@@ -1,10 +1,13 @@
 package main.java.com.model;
 
+import javax.persistence.Column;
+
 import main.java.com.model.dto.google.MatchingImageDTO;
 
 public class MatchingImage {
 	
 	private Long id;
+    @Column(columnDefinition="TEXT")
 	private String url;
 	
 	public MatchingImage() {
