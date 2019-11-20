@@ -14,6 +14,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 
 import org.json.simple.parser.ParseException;
 
@@ -78,7 +79,7 @@ public class ImageSearchService {
 		try {
 			return Response.ok(ImageSearchControl.searchPagesWithMatchingImages(url)).build();
 		} catch (IOException | ParseException e) {
-			return Response.noContent().build();
+			return Response.status(Status.BAD_REQUEST).entity(e.getMessage()).build();
 		}		
 	}
 	

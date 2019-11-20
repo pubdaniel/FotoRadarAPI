@@ -73,15 +73,19 @@ public class ImageSearchControl {
 
     private static List<PageWithMatchingImagesDTO> convertJsonToPagesWithMatchingImages(String json) throws ParseException {
         Gson gson = new Gson();
+        
+        try {
+        	JSONParser parser = new JSONParser();
+        	JSONObject jsonObject = (JSONObject) parser.parse(json);
+        	JSONArray response = (JSONArray) jsonObject.get("responses");
+        	JSONObject responseFisrtResult = (JSONObject) response.get(0);
+        	JSONObject webDetection = (JSONObject) responseFisrtResult.get("webDetection");
+        	JSONArray pagesWithMatchingImagesObj = (JSONArray) webDetection.get("pagesWithMatchingImages");
+        	return Arrays.asList(gson.fromJson(pagesWithMatchingImagesObj.toString(), PageWithMatchingImagesDTO[].class));
+        } catch (Exception e) {
+			throw new IllegalAccessError();
+		}
 
-        JSONParser parser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) parser.parse(json);
-        JSONArray response = (JSONArray) jsonObject.get("responses");
-        JSONObject responseFisrtResult = (JSONObject) response.get(0);
-        JSONObject webDetection = (JSONObject) responseFisrtResult.get("webDetection");
-        JSONArray pagesWithMatchingImagesObj = (JSONArray) webDetection.get("pagesWithMatchingImages");
-
-        return Arrays.asList(gson.fromJson(pagesWithMatchingImagesObj.toString(), PageWithMatchingImagesDTO[].class));
     }
 
 }
